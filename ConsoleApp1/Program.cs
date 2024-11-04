@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 
 namespace ConsoleApp1
 {
@@ -9,6 +10,13 @@ namespace ConsoleApp1
             Console.WriteLine("Liczby pierwsze od 2 do 100: " + string.Join(", ", SitoEratostenesa(100)));
         }
 
+        /*******************************************************
+         nazwa funkcji: WypelnijTablice
+         parametry wejściowe: tablica - zawoera tablicę wartości logicznych
+         wartość zwracana: brak
+         informacje: funkcja wypełnia tablicę wartościami logicznymi zgodnie z algorytmem sita erastotenesa
+         autor: PESEL DAMIAN RACZEK
+        ****************************************************/
         static void WypelnijTablice(bool[] tablica)
         {
             for (int i = 2; i <= Math.Sqrt(tablica.Length - 1); i++)
